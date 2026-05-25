@@ -1,0 +1,26 @@
+#include <stdio.h> // Biblioteca padrão de entrada e saída
+
+int main() { // Função principal onde o prpgrama começa a ser executado 
+
+    char nome[50]; // Vetor de caracteres para armazenar o nome
+    int idade; // Variável inteira para armazenar a idade
+    char cidade[50]; // Vetor de caracteres para armazenar a cidade
+
+    printf("Digite seu nome: "); // Solicita o nome
+    scanf("%s", nome); // Lê o nome digitado
+
+    printf("Digite sua idade: "); // Solicita a idade
+    scanf("%d", &idade); // Lê a idade digitada
+
+    printf("Digite sua cidade: "); // Solicita a cidade
+    scanf("%s", cidade); // Lê a cidade digitada
+
+    printf("\n--- Informacoes Digitadas ---\n"); // Exibe um título
+
+    printf("Nome: %s\n", nome); // Exibe o nome
+    printf("Idade: %d anos\n", idade); // Exibe a idade
+    printf("Cidade: %s\n", cidade); // Exibe a cidade
+
+    return 0; // Finaliza o programa corretamente
+}
+
