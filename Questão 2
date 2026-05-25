@@ -1,0 +1,33 @@
+#include <stdio.h> // Biblioteca padrão de entrada e saída
+
+int main() { // Função principal onde o prpgrama começa a ser executado 
+
+    int num1, num2;// Declaração das variáveis inteiras
+
+    int soma;// Variável para armazenar a soma
+
+    int divisaoInteira;// Variável para armazenar a divisão inteira
+
+    float divisaoReal; // Variável float para armazenar a divisão real
+
+    printf("Digite o primeiro numero inteiro: ");// Solicita ao usuário o primeiro número
+    scanf("%d", &num1);//Lê um número interio digitado pelo usuário e armazenado na variável num1
+
+    printf("Digite o segundo numero inteiro: "); // Solicita ao usuário o segundo número
+    scanf("%d", &num2);//Lê um número interio digitado pelo usuário e armazenado na variável num2
+
+    soma = num1 + num2;// Realiza a soma dos dois números
+
+    divisaoInteira = num1 / num2;// Realiza a divisão inteira
+
+    divisaoReal = (float) num1 / num2;// Realiza a divisão real utilizando casting
+    // (float) converte um dos números inteiros para float
+
+    printf("\nSoma: %d\n", soma);// Exibe o resultado da soma
+
+    printf("Divisao inteira: %d\n", divisaoInteira);// Exibe o resultado da divisão inteira
+
+    printf("Divisao real: %.2f\n", divisaoReal);// Exibe o resultado da divisão real com 2 casas decimais
+
+    return 0;// Retorna 0 indicando que o programa foi executado corretamente
+}
