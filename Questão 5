@@ -1,0 +1,26 @@
+#include <stdio.h> // Biblioteca padrão de entrada e saída
+
+int main() { // Função principal onde o prpgrama começa a ser executado 
+
+    float media, frequencia; // Variáveis para armazenar média e frequência
+
+    printf("Digite a media do aluno: "); // Solicita a média
+    scanf("%f", &media); // Lê a média digitada
+
+    printf("Digite a frequencia do aluno (em %%): "); // Solicita a frequência
+    scanf("%f", &frequencia); // Lê a frequência digitada
+
+    if (media >= 7 && frequencia >= 75) { // Verifica se o aluno foi aprovado usando o operador &&
+        printf("Aluno aprovado!\n"); // Exibe mensagem de aprovação
+    }
+
+    if (media < 7 || frequencia < 75) { // Verifica se o aluno foi reprovado usando o operador ||
+        printf("Aluno reprovado!\n"); // Exibe mensagem de reprovação
+    }
+
+    if (!(media >= 7 && frequencia >= 75)) {  // Verifica usando o operador ! (negação lógica) 
+        printf("O aluno nao atende aos requisitos de aprovacao.\n"); // Exibe mensagem
+    }
+
+    return 0; // Finaliza o programa corretamente
+}
