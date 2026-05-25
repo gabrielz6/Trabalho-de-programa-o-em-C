@@ -1,0 +1,20 @@
+#include <stdio.h> // Biblioteca padrão de entrada e saída
+
+int main() { // Função principal onde o prpgrama começa a ser executado 
+
+    int numero; // Variável para armazenar o número digitado
+    int antecessor; // Variável para armazenar o antecessor
+    int sucessor; // Variável para armazenar o sucessor
+
+    printf("Digite um numero inteiro: "); // Solicita o número
+    scanf("%d", &numero); // Lê o número digitado
+
+    antecessor = numero - 1; // Calcula o antecessor
+    sucessor = numero + 1; // Calcula o sucessor
+
+    printf("Antecessor: %d\n", antecessor); // Exibe o antecessor
+    printf("Sucessor: %d\n", sucessor); // Exibe o sucessor
+
+    return 0; // Finaliza o programa corretamente
+}
+
