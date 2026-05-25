@@ -1,0 +1,23 @@
+#include <stdio.h> // Biblioteca padrão de entrada e saída
+
+int main() { // Função principal onde o prpgrama começa a ser executado 
+
+    int numero; // Variável para armazenar o número digitado
+
+    printf("Digite um numero: "); // Solicita o número ao usuário
+    scanf("%d", &numero); // Lê o número digitado
+
+    if (numero > 0) {   // Verifica se o número é positivo
+        printf("O numero e positivo.\n"); // Exibe mensagem
+    }
+
+    if (numero < 0) { // Verifica se o número é negativo
+        printf("O numero e negativo.\n"); // Exibe mensagem
+    }
+
+    if (numero == 0) {  // Verifica se o número é igual a zero
+        printf("O numero e zero.\n"); // Exibe mensagem
+    }
+
+    return 0; // Finaliza o programa corretamente
+}
