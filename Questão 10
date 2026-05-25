@@ -1,0 +1,19 @@
+#include <stdio.h> // Biblioteca padrão de entrada e saída
+
+int main() { // Função principal onde o prpgrama começa a ser executado 
+
+    int numero; // Variável para armazenar o número digitado
+
+    printf("Digite um numero inteiro: "); // Solicita o número ao usuário
+    scanf("%d", &numero); // Lê o número digitado
+
+    if (numero % 2 == 0) { // Verifica se o número é par
+        printf("O numero e par.\n"); // Exibe mensagem informando que é par
+    }
+
+    if (numero % 2 != 0) { // Verifica se o número é par
+        printf("O numero e impar.\n"); // Exibe mensagem informando que é ímpar
+    }
+
+    return 0; // Finaliza o programa corretamente
+}
