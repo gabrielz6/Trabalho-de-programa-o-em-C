@@ -1,0 +1,27 @@
+#include <stdio.h> // biblioteca padrão
+
+int main() { // função principal
+    int vetor[10]; // vetor com 10 posições
+    int i; // contador
+    int maior, posicao; // variáveis para maior valor e posição
+
+    for (i = 0; i < 10; i++) { // loop para ler valores
+        printf("Digite um numero: "); // pede número
+        scanf("%d", &vetor[i]); // armazena no vetor
+    }
+
+    maior = vetor[0]; // assume primeiro valor como maior
+    posicao = 0; // posição inicial
+
+    for (i = 1; i < 10; i++) { // percorre o restante do vetor
+        if (vetor[i] > maior) { // verifica se é maior
+            maior = vetor[i]; // atualiza maior
+            posicao = i; // atualiza posição
+        }
+    }
+
+    printf("Maior valor: %d\n", maior); // mostra maior valor
+    printf("Posicao do maior valor: %d\n", posicao); // mostra posição
+
+    return 0; // fim
+}
