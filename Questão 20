@@ -1,0 +1,21 @@
+#include <stdio.h> // biblioteca padrão
+
+int main() { // função principal
+    int matriz[3][3]; // cria matriz 3x3
+    int i, j; // variáveis de controle
+
+    for (i = 0; i < 3; i++) { // percorre linhas
+        for (j = 0; j < 3; j++) { // percorre colunas
+            printf("Digite um valor: "); // pede valor
+            scanf("%d", &matriz[i][j]); // armazena na matriz
+        }
+    }
+
+    printf("Diagonal principal:\n"); // título
+
+    for (i = 0; i < 3; i++) { // percorre a diagonal
+        printf("%d\n", matriz[i][i]); // imprime elementos onde linha = coluna
+    }
+
+    return 0; // fim
+}
