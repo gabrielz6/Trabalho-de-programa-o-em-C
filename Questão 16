@@ -1,0 +1,17 @@
+#include <stdio.h> // biblioteca padrão
+
+int main() { // função principal
+    int num, i; // variáveis
+    int fatorial = 1; // inicia fatorial com 1
+
+    printf("Digite um numero: "); // pede número
+    scanf("%d", &num); // lê número
+
+    for (i = 1; i <= num; i++) { // loop até o número
+        fatorial *= i; // calcula fatorial
+    }
+
+    printf("Fatorial de %d = %d\n", num, fatorial); // mostra resultado
+
+    return 0; // fim
+}
