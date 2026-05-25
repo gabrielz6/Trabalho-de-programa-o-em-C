@@ -1,0 +1,46 @@
+#include <stdio.h> // biblioteca padrão
+
+int main() { // função principal
+    float num1, num2, resultado; // variáveis dos números
+    char operacao; // variável para operação
+
+    printf("Digite o primeiro numero: "); // pede número 1
+    scanf("%f", &num1); // lê número 1
+
+    printf("Digite o segundo numero: "); // pede número 2
+    scanf("%f", &num2); // lê número 2
+
+    printf("Digite a operacao (+, -, *, /): "); // pede operação
+    scanf(" %c", &operacao); // lê operação (com espaço antes do %c)
+
+    switch (operacao) { // estrutura switch
+        case '+': // caso seja soma
+            resultado = num1 + num2; // soma
+            printf("Resultado: %.2f\n", resultado); // imprime
+            break; // encerra o caso
+
+        case '-': // caso subtração
+            resultado = num1 - num2; // subtrai
+            printf("Resultado: %.2f\n", resultado); // imprime
+            break;
+
+        case '*': // caso multiplicação
+            resultado = num1 * num2; // multiplica
+            printf("Resultado: %.2f\n", resultado); // imprime
+            break;
+
+        case '/': // caso divisão
+            if (num2 != 0) { // verifica divisão por zero
+                resultado = num1 / num2; // divide
+                printf("Resultado: %.2f\n", resultado); // imprime
+            } else { // se for zero
+                printf("Erro: divisao por zero\n"); // erro
+            }
+            break;
+
+        default: // caso operação inválida
+            printf("Operacao invalida\n"); // mensagem
+    }
+
+    return 0; // fim
+}
