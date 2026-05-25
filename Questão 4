@@ -1,0 +1,27 @@
+#include <stdio.h> // Biblioteca padrão de entrada e saída
+
+int main() { // Função principal onde o prpgrama começa a ser executado 
+
+    int num1, num2; // Declaração das variáveis inteiras
+
+    printf("Digite o primeiro numero: "); // Solicita o primeiro número
+    scanf("%d", &num1); // Lê o primeiro número
+
+    printf("Digite o segundo numero: "); // Solicita o segundo número
+    scanf("%d", &num2); // Lê o segundo número
+
+    if (num1 == num2) { // Verifica se os números são iguais
+        printf("Os numeros sao iguais.\n"); // Exibe mensagem de igualdade
+    }
+
+    if (num1 > num2) { // Verifica se o primeiro número é maior
+        printf("O primeiro numero e maior.\n"); // Exibe mensagem
+    }
+
+    if (num2 > num1) { // Verifica se o segundo número é maior
+        printf("O segundo numero e maior.\n"); // Exibe mensagem
+    }
+
+    return 0; // Finaliza o programa corretamente
+}
+
