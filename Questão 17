@@ -1,0 +1,19 @@
+#include <stdio.h> // biblioteca de entrada e saída
+
+int main() { // função principal
+    int vetor[5]; // cria um vetor com 5 posições
+    int i; // variável de controle
+
+    for (i = 0; i < 5; i++) { // loop para ler os valores
+        printf("Digite um valor: "); // pede valor
+        scanf("%d", &vetor[i]); // armazena no vetor
+    }
+
+    printf("Valores do vetor:\n"); // título
+
+    for (i = 0; i < 5; i++) { // loop para exibir os valores
+        printf("%d\n", vetor[i]); // imprime cada valor
+    }
+
+    return 0; // fim do programa
+}
