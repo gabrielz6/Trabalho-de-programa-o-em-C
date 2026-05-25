@@ -1,0 +1,18 @@
+#include <stdio.h> // Biblioteca padrão de entrada e saída
+
+int main() { // Função principal onde o prpgrama começa a ser executado 
+
+    float celsius; // Variável para armazenar a temperatura em Celsius
+    float fahrenheit; // Variável para armazenar a temperatura em Fahrenheit
+
+    printf("Digite a temperatura em Celsius: "); // Solicita a temperatura
+    scanf("%f", &celsius); // Lê a temperatura digitada
+
+   
+    fahrenheit = (9 * celsius / 5) + 32; // Realiza a conversão usando a fórmula F = (9 * C / 5) + 32
+
+    printf("Temperatura em Fahrenheit: %.2f\n", fahrenheit); // Exibe o resultado
+
+    return 0; // Finaliza o programa corretamente
+}
+
